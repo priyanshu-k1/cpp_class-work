@@ -22,14 +22,10 @@ void Rectangle::peri(){
         p=2*(l+w);
         cout<<"The perimeter of the rectangle is "<<p<<endl;
     }
-    // sample(){
-    //     cout<<"This is friend function\n";
-    // };
 int  main(){
     Rectangle r1;
     r1.get_data();
     r1.cal_area();
-    r1.peri();
-    // sample();
+    r1.peri()
     return 0;
 }
