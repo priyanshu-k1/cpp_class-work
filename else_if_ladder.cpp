@@ -8,15 +8,20 @@ int main() {
 
   if (num == 1) {
     cout << "You entered one." << endl;
-  } else if (num == 2) {
+  } 
+  else if (num == 2) {
     cout << "You entered two." << endl;
-  } else if (num == 3) {
+  } 
+  else if (num == 3) {
     cout << "You entered three." << endl;
-  } else if (num == 4) {
+  }
+   else if (num == 4) {
     cout << "You entered four." << endl;
-  } else if (num == 5) {
+  } 
+  else if (num == 5) {
     cout << "You entered five." << endl;
-  } else {
+  } 
+  else {
     cout << "Invalid input." << endl;
   }
 

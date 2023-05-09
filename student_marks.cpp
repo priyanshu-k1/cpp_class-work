@@ -3,9 +3,9 @@ using namespace std;
 
 int main(){
     int std_data[5][5],total_marks[5];
-    string sub_name[8]={"Roll No","cpp","maths","data structure","computer networking","computer architecture","Total","Average"};
+    string sub_name[8]={"cpp","maths","data structure","computer networking","computer architecture","Total","Average"};
     for(int i=0;i<5;i++){
-        cout<<"Enter marks of rollno "<<i+1<<endl;
+        cout<<"Enter marks of student "<<i+1<<endl;
         for(int j=0;j<5;j++){
             cout<<"Enter  marks in "<<sub_name[j]<<":\n";
             cin>>std_data[i][j];}}
@@ -18,10 +18,12 @@ int main(){
         total_marks[k]=sum;
         sum=0;
     }
-    for(int i=0;i<50;i++){cout<<"*Results";}
+for(int i=0;i<50;i++)
+{cout<<"*";}
     cout<<endl;
-
+    cout<<"Roll No  | ";
     for(int i=0;i<8;i++){
+       
         cout<<sub_name[i]<<" | ";
     }
     cout<<endl;

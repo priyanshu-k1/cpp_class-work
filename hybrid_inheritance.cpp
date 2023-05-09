@@ -15,6 +15,10 @@ class Item_list{
             cout<<endl;
             cout<<"Enter the index  of the racquet you want to buy\n";
             cout<<"1-Astrox 99\n2-Voltric Z-Force 2\n3-Duora 77\n4-Astrox 2 DG\n";
+            for(int i=0;i<=50;i++){
+                if(i==25){cout<<"ORDER";}
+                cout<<"-";}
+            cout<<endl;
             cin>>item_code;
         }
         else if(index==2){
@@ -24,6 +28,10 @@ class Item_list{
             cout<<endl;
             cout<<"Enter the index of the shuttle you want to buy\n";
             cout<<"5-Mavis 350\n6-Mavis 10\n7-Mavis 300\n8-Mavis 10i\n";
+             for(int i=0;i<=50;i++){
+                if(i==25){cout<<"ORDER";}
+                cout<<"-";}
+            cout<<endl;
             cin>>item_code;
         }
         else{
@@ -99,12 +107,12 @@ class Bill:public Get_price,public Customer_details{
             if(i==25){cout<<"RECEIPT";}
             cout<<"-";}
         cout<<endl;
-        cout<<"Customer name :Mr/Mrs "<<first_name<<" "<<last_name<<endl;
+        cout<<"Customer name :Mr/Mrs: "<<first_name<<" "<<last_name<<endl;
         cout<<"contact number : "<<contact<<endl;
         cout<<"Product name : "<<item_name<<endl;
         cout<<"Item cost: "<<price<<endl;
-        cout<<"GST : 18%"<<endl;
-        cout<<"Total cost : "<<price+((price/100)*18)<<endl;
+        cout<<"GST : 5%"<<endl;
+        cout<<"Total cost : "<<price+((price/100)*5)<<endl;
         for(int i=0;i<=50;i++){
             if(i==25){cout<<"Thank you";}
             cout<<"-";

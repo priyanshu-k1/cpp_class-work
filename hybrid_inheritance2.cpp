@@ -3,48 +3,46 @@ using namespace std;
 
 class Rectangle{
 public:
-    int width, length;
-    void get_dimensions(int l,int b){
-        length = l;
-        width = b;
+    int width, height;
+    void get_dimension(int x, int y){
+        width=x;
+        height=y;
+    }
+};
+class Area:public Rectangle{
+public:
+    int ar;
+    void calc_area(){
+        ar=width*height;
+        
     }
 };
 class Perimeter:public Rectangle{
 public:
     int peri;
     void calc_peri(){
-        peri=2*(length+width);
-        ;
+        peri=2*(width+height);
+       
     }
-
 };
-class Area:public Rectangle{
+class Print_data:public Area,public Perimeter{
 public:
-    int ar;
-    void calc_area(){
-        ar=length+width;
+    void print(){
+        cout<<"Area of the rectangle:"<<ar<<endl;
+        cout<<"Perimeter of the rectangle:"<<peri<<endl;
     }
+    
 };
-class Display_result:public Perimeter,public Area{
-public:
-    void show_data(){
-         cout<<"Area of the rectangle :"<<ar<<endl;
-        cout<<"Perimeter of the rectangle :"<<peri<<endl;
-    }
-   
-};
-
 
 int main(){
-    cout<<"This is a example of multi inheritance and hierarchal inheritance\n";
-    int len,wid;
-    cout<<"Enter the length and height of the rectangle\n";
-    cin>>len>>wid;
+    int len ,bre;
+    cout<<"Enter the length and breadth of the rectangle\n"<<endl;
+    cin>>len>>bre;
+    Print_data pd;
     Rectangle r1;
-    Display_result ds;
-    r1.get_dimensions(12,13);
-    ds.calc_peri();
-    ds.calc_area();
-    ds.show_data();
+    r1.get_dimension(len,bre);
+    pd.calc_area();
+    pd.calc_peri();
+    pd.print();
     return 0;
 }
