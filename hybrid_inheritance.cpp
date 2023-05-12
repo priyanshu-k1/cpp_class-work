@@ -40,7 +40,7 @@ class Item_list{
     }
 };
 class Get_price:public Item_list{
-    public:
+public: 
     string item_name;
     int price;
     void get_price(){

@@ -10,7 +10,6 @@ class Rectangle{
     }
     void cal_area();
     void peri();
-    // friend sample();
 };
 void Rectangle::cal_area(){
         int area;
@@ -26,6 +25,6 @@ int  main(){
     Rectangle r1;
     r1.get_data();
     r1.cal_area();
-    r1.peri()
+    r1.peri();
     return 0;
 }
