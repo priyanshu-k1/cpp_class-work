@@ -9,6 +9,7 @@ public:
     }
 };
 class class2:public Class1{
+public:
     void print2(){
 
         cout<<"I am single inheritance example\n";
