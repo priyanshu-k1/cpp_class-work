@@ -27,10 +27,3 @@ int main(){
     p1.compare(word);
     return 0;
 }
-
-
-
-
-// for(int i=0;i<strlen(word);i++){
-//         cout<<word[i]<<"\n";
-//     }

@@ -1,5 +1,2 @@
-class Palindrome{
-// private:
-//  int hello;
-//  hello=10;
-// };
+#include<iostream>
+using namespace std;
