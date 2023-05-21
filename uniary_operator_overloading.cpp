@@ -18,7 +18,6 @@ public:
         }
     };
 };
-
 int main(){
     Uniary_operator uo;
     ++uo;
