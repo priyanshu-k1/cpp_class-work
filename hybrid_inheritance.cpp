@@ -107,7 +107,7 @@ class Bill:public Get_price,public Customer_details{
             if(i==25){cout<<"RECEIPT";}
             cout<<"-";}
         cout<<endl;
-        cout<<"Customer name :Mr/Mrs: "<<first_name<<" "<<last_name<<endl;
+        cout<<"Customer name :Mr/Mrs "<<first_name<<" "<<last_name<<endl;
         cout<<"contact number : "<<contact<<endl;
         cout<<"Product name : "<<item_name<<endl;
         cout<<"Item cost: "<<price<<endl;
