@@ -20,6 +20,23 @@ void insert_at_tail(Node* &head,int val){ // inster the value at the end of the 
     }
     temp->next = new_node;// after getting the last node we are adding the new node to  it .......
 }
+
+void search(Node* head,int val){
+    Node* temp=head;
+    int i=0,flag=0;
+    while(temp!=NULL){
+        if(temp->next==val){
+            cout<<"\nThe element is present at index "<<i<<endl;
+            flag=1;
+        }
+        i++;
+        temp=temp->next;
+    }
+    if(flag==0){
+        cout<<"\nThe element is absent\n";
+    }
+}
+
 void display(Node* head){// displaying the values in the link list by value
     Node* temp=head;
     while(temp!=NULL){
@@ -38,5 +55,6 @@ int main(){
     insert_at_tail(head,4);
     insert_at_tail(head,5);
     display(head);
+    search(head,5);
     return 0;
 }
