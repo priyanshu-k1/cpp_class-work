@@ -1,25 +1,24 @@
 #include<iostream>
 using namespace std;
 
-
 class Stack{
 public:
-    int* arr;
+    int *arr;
+    int data;
     int top;
     int size;
     Stack(int x){
-        size=x;
+        size = x;
         arr=new int[size];
         top=-1;
     }
-    void push(int x){
+    void push(int val){
        if(top>size){
         cout<<"Stack overflow\n";
        }
        else{
          top++;
-         arr[top]=x;
-         
+         arr[top] = val;
        }
     }
     void pop(){
@@ -30,21 +29,27 @@ public:
             top--;
         }
     }
+    bool isEmpty(){
+        if(top==-1){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+    int top_disp(){
+        return arr[top];
+    }
     void display(){
-        for(int i=0; i<=top;  i++){
+        for(int i=0; i<size; i++){
             cout<<arr[i]<<" ";
         }
         cout<<endl;
     }
+
 };
   
 int main(){
-    Stack sk(5);
-    for(int i=1; i<6;i++){
-        sk.push(i);
-    }
-    sk.display();
-    sk.pop();
-    sk.display();
+
 return 0;
 }

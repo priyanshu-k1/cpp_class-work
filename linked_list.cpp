@@ -25,7 +25,7 @@ void search(Node* head,int val){
     Node* temp=head;
     int i=0,flag=0;
     while(temp!=NULL){
-        if(temp->next==val){
+        if(temp->data==val){
             cout<<"\nThe element is present at index "<<i<<endl;
             flag=1;
         }
@@ -37,7 +37,7 @@ void search(Node* head,int val){
     }
 }
 
-void display(Node* head){// displaying the values in the link list by value
+void display(Node* head){
     Node* temp=head;
     while(temp!=NULL){
         cout<<temp->data<<"->";
@@ -55,6 +55,6 @@ int main(){
     insert_at_tail(head,4);
     insert_at_tail(head,5);
     display(head);
-    search(head,5);
+    // search(head,5);
     return 0;
 }

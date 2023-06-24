@@ -1,2 +1,1 @@
-#include<iostream>
-using namespace std;
+search(head,5);
